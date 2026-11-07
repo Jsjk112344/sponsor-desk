@@ -22,6 +22,8 @@ def main():
         for field in ('directory','location','provider','instructions','addressing'):
             assert a[field]
         assert a['addressing'] == 'owner-agents'
+        role = a['name'].split('-')[-1]
+        assert (ROOT/f'agents/{role}/INSTRUCTIONS.md').read_text() in a['instructions']
         assert a['directory'].endswith(a['name'])
     for r in json.loads((ROOT/'fixtures/cached/candidates.json').read_text()):
         for receipt in r['receipts']:

@@ -7,7 +7,8 @@ Sponsor Desk is a two-agent Switch room that turns an event brief into sourced s
 Video: **not recorded — add the final hosted recording URL here before submission.**
 [Exact camera script](docs/demo-script.md) · [Architecture](docs/architecture.md)
 
-**Verified:** credential-free contract rehearsal and CI. **Pending:** Switch template
+**Verified:** credential-free contract rehearsal, both actual Claude CLI fixture
+instruction responses, installed Switch template lint (no findings), and CI. **Pending:** Switch template
 import, actual room handoff/persistence and authenticated live MCP flow. The receipt
 facts are public CNCF sponsor listings inspected on Nov 7, 2026; cached candidate
 and pitch outputs are authored demo fixtures, not exported Argus responses. The event
@@ -37,7 +38,7 @@ ownership conflicts. Room review never changes a backend claim-approval state.
    python3 -m venv .venv
    .venv/bin/pip install -r requirements.txt
    ```
-2. Run the credential-free checks. Python 3.11+ is required; no Docker, model or MCP
+2. Run the credential-free checks. Python 3.9+ is required; no Docker, model or MCP
    credentials are needed for fixture rehearsal. Setup reports missing live prerequisites.
    ```bash
    SPONSOR_DESK_FIXTURES=1 bash scripts/setup.sh

@@ -24,14 +24,14 @@ clearly distinguishes authored cached outputs from service results.
 
 ## 500-word description
 
-Sponsor Desk addresses a concrete event-organizer workflow: finding plausible sponsor
+Sponsor Desk addresses an event-organizer workflow: finding plausible sponsor
 candidates, deciding which deserve attention, and reviewing the first exploratory
 pitch. Evidence, selection, and draft review often become disconnected conversations.
 This project brings those steps into a Switch room where two existing coding agents
 and a human organizer can see the same brief, corrections, and decision context.
 
-Sourcer begins by restating the effective event brief and waiting for explicit human
-confirmation. It then gathers dated evidence of prior sponsorship listings. Every
+Sourcer begins by restating the effective event brief and waiting for human
+confirmation. It then gathers evidence of sponsorship listings. Every
 candidate carries an event edition, sponsorship tier, source URL, and observation
 timestamp. A prior roster listing is not treated as evidence of payment, current
 budget, or buying intent. Fit remains a labeled inference, and missing information
@@ -44,14 +44,14 @@ to Outreach by its full participant name, in the original thread, with a version
 contract containing the confirmed brief version and shareable receipts.
 
 Outreach uses that handoff to prepare a role-addressed exploratory pitch. It does
-not invent a person, email address, product claim, or current sponsor relationship.
+not invent a person, email address, product claim, or sponsor relationship.
 Where authorized access exists, the intended persistence path is Source’s versioned
 outreach draft save and reader. Internal Argus Sales targets organizer accounts;
 Sponsor Desk does not manufacture an organizer identity for a sponsor brand just
 to satisfy that API. Private Source sessions and licensed evidence do not become
 shareable simply because two agents belong to the same room.
 
-Human review applies to the exact current draft version in its original thread.
+Human review applies to the exact draft version in its original thread.
 Approval never transfers to a different recipient, revised brief, or later draft.
 The room retains immutable Task and Decision documents with the human message
 reference and body hash. Current Switch documentation marks native Tasks as not

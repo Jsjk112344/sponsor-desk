@@ -14,6 +14,8 @@ Official deadline Nov 7 18:29 UTC passed before this session; no timely submissi
 3. Sourcer posts five sourced candidates. Human says `shortlist Microsoft Azure,
    skip AWS, not_now Google Cloud`. Save only those explicit choices. Shortlist
    enables drafting; not_now defers; skip excludes. None authorizes sending.
+   All choices persist as Selection room documents; only explicit shortlists use
+   source_workspace_save_batch. source_workspace_save has no selection enum.
 4. Sourcer @mentions Outreach in the same thread with public handoff v1 below.
 5. Outreach reads sales_playbook + sales_accounts. Internal sales is designed for
    organizer accounts: never force sponsor brands into that schema. Prefer
