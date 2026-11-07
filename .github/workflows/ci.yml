@@ -1,0 +1,22 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  fixture-contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m venv .venv
+      - run: .venv/bin/pip install -r requirements.txt
+      - run: sudo apt-get update && sudo apt-get install -y shellcheck
+      - run: shellcheck scripts/*.sh
+      - name: Lint YAML
+        run: .venv/bin/python -c "import yaml,pathlib; [yaml.safe_load(p.read_text()) for p in pathlib.Path('.').rglob('*.yaml') if '.venv' not in p.parts]; yaml.safe_load(pathlib.Path('.github/workflows/ci.yml').read_text())"
+      - run: SPONSOR_DESK_FIXTURES=1 bash scripts/setup.sh
+      - run: SPONSOR_DESK_FIXTURES=1 bash scripts/smoke.sh
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fixture-contract-transcript
+          path: .local/transcript.txt

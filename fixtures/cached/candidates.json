@@ -1,0 +1,112 @@
+[
+  {
+    "candidate_id": "azure",
+    "company": "Microsoft Azure",
+    "domain": "azure.microsoft.com",
+    "receipts": [
+      {
+        "event": "KubeCon + CloudNativeCon India",
+        "edition": 2025,
+        "tier": "Gold",
+        "source_url": "https://www.cncf.io/wp-content/uploads/2025/09/KubeCon_India25_TransparencyReport.pdf#page=12",
+        "observed_at": "2026-11-07T23:43:00Z",
+        "observation": "Public report page 12 visually lists this brand under Gold Sponsors."
+      }
+    ],
+    "fit_inference": "Inference: a prior cloud-native event listing warrants exploring developer audience fit; current budget and interest unknown.",
+    "gaps": [
+      "No verified contact",
+      "No current buying intent",
+      "No current sponsorship budget"
+    ],
+    "decision": "not_reviewed"
+  },
+  {
+    "candidate_id": "aws",
+    "company": "AWS",
+    "domain": "aws.amazon.com",
+    "receipts": [
+      {
+        "event": "KubeCon + CloudNativeCon India",
+        "edition": 2025,
+        "tier": "Gold",
+        "source_url": "https://www.cncf.io/wp-content/uploads/2025/09/KubeCon_India25_TransparencyReport.pdf#page=12",
+        "observed_at": "2026-11-07T23:43:00Z",
+        "observation": "Public report page 12 visually lists this brand under Gold Sponsors."
+      }
+    ],
+    "fit_inference": "Inference: a prior cloud-native event listing warrants exploring developer audience fit; current budget and interest unknown.",
+    "gaps": [
+      "No verified contact",
+      "No current buying intent",
+      "No current sponsorship budget"
+    ],
+    "decision": "not_reviewed"
+  },
+  {
+    "candidate_id": "google",
+    "company": "Google Cloud",
+    "domain": "cloud.google.com",
+    "receipts": [
+      {
+        "event": "KubeCon + CloudNativeCon India",
+        "edition": 2025,
+        "tier": "Gold",
+        "source_url": "https://www.cncf.io/wp-content/uploads/2025/09/KubeCon_India25_TransparencyReport.pdf#page=12",
+        "observed_at": "2026-11-07T23:43:00Z",
+        "observation": "Public report page 12 visually lists this brand under Gold Sponsors."
+      }
+    ],
+    "fit_inference": "Inference: a prior cloud-native event listing warrants exploring developer audience fit; current budget and interest unknown.",
+    "gaps": [
+      "No verified contact",
+      "No current buying intent",
+      "No current sponsorship budget"
+    ],
+    "decision": "not_reviewed"
+  },
+  {
+    "candidate_id": "atlassian",
+    "company": "Atlassian",
+    "domain": "atlassian.com",
+    "receipts": [
+      {
+        "event": "KubeCon + CloudNativeCon India",
+        "edition": 2025,
+        "tier": "Gold",
+        "source_url": "https://www.cncf.io/wp-content/uploads/2025/09/KubeCon_India25_TransparencyReport.pdf#page=12",
+        "observed_at": "2026-11-07T23:43:00Z",
+        "observation": "Public report page 12 visually lists this brand under Gold Sponsors."
+      }
+    ],
+    "fit_inference": "Inference: a prior cloud-native event listing warrants exploring developer audience fit; current budget and interest unknown.",
+    "gaps": [
+      "No verified contact",
+      "No current buying intent",
+      "No current sponsorship budget"
+    ],
+    "decision": "not_reviewed"
+  },
+  {
+    "candidate_id": "digitalocean",
+    "company": "DigitalOcean",
+    "domain": "digitalocean.com",
+    "receipts": [
+      {
+        "event": "KubeCon + CloudNativeCon India",
+        "edition": 2025,
+        "tier": "Gold",
+        "source_url": "https://www.cncf.io/wp-content/uploads/2025/09/KubeCon_India25_TransparencyReport.pdf#page=12",
+        "observed_at": "2026-11-07T23:43:00Z",
+        "observation": "Public report page 12 visually lists this brand under Gold Sponsors."
+      }
+    ],
+    "fit_inference": "Inference: a prior cloud-native event listing warrants exploring developer audience fit; current budget and interest unknown.",
+    "gaps": [
+      "No verified contact",
+      "No current buying intent",
+      "No current sponsorship budget"
+    ],
+    "decision": "not_reviewed"
+  }
+]

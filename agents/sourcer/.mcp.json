@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "argus-source": {
+      "type": "http",
+      "url": "${ARGUS_SOURCE_MCP_URL}",
+      "headers": {
+        "Authorization": "Bearer ${ARGUS_SOURCE_TOKEN}"
+      }
+    },
+    "ducket-argus": {
+      "type": "http",
+      "url": "${DUCKET_ARGUS_MCP_URL}",
+      "headers": {
+        "Authorization": "Bearer ${DUCKET_API_KEY}"
+      }
+    }
+  }
+}

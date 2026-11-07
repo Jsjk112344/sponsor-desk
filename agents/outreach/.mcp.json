@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "argus-source": {
+      "type": "http",
+      "url": "${ARGUS_SOURCE_MCP_URL}",
+      "headers": {
+        "Authorization": "Bearer ${ARGUS_SOURCE_TOKEN}"
+      }
+    },
+    "argus-sales": {
+      "type": "http",
+      "url": "${ARGUS_SALES_MCP_URL}",
+      "headers": {
+        "Authorization": "Bearer ${ARGUS_SALES_TOKEN}"
+      }
+    }
+  }
+}
