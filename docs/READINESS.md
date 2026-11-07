@@ -25,7 +25,12 @@ https://github.com/Jsjk112344/sponsor-desk
   Global Claude and Codex MCP configuration contain no configured servers.
 - [x] Claude and Codex report signed-in state. No API key or paid fallback used.
 - [x] Camera script, 100-/500-word submission copy, blog and #HowISwitch drafts written.
-- [ ] Template imported/run in Console; expected agents and room observed.
+- [x] Template deployed through the Console-managed Switch server API. Created
+  `demo-sourcer`, `demo-outreach` and Discord room `demo-sponsor-desk`; both agents
+  report live. Rules document attached with no attachment failures.
+  Console UI import itself was not separately exercised.
+  Room: https://discord.com/channels/1568772029791076404/1568776488705331212
+  Kickoff replies have not yet been independently read back.
 - [x] Discord bridge verified through authenticated Switch API: exact display name
   `Discord`, type `discord`, status `active`, channel creation enabled.
   The current Switch account has a linked Discord identity. Use `bridge=Discord`.

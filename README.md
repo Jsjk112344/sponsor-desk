@@ -8,8 +8,8 @@ Video: **not recorded — add the final hosted recording URL here before submiss
 [Exact camera script](docs/demo-script.md) · [Architecture](docs/architecture.md)
 
 **Verified:** credential-free contract rehearsal, both actual Claude CLI fixture
-instruction responses, installed Switch template lint (no findings), and CI. **Pending:** Switch template
-import, actual room handoff/persistence and authenticated live MCP flow. The receipt
+instruction responses, installed Switch template lint (no findings), and CI. **Deployed:** the two agents and `demo-sponsor-desk` Discord room; both report live.
+**Pending:** kickoff reply verification, actual room handoff/persistence and authenticated live MCP flow. The receipt
 facts are public CNCF sponsor listings inspected on Nov 7, 2026; cached candidate
 and pitch outputs are authored demo fixtures, not exported Argus responses. The event
 is fictional. See [provenance](fixtures/cached/PROVENANCE.md) and [readiness](docs/READINESS.md).
