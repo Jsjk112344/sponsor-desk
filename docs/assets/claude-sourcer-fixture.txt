@@ -1,0 +1,97 @@
+**Thread:** demo-thread · **Run:** fixture-demo · **Role:** Sourcer
+
+cached — fixture mode (fixtures/cached); fixture IDs in use. Tools are unavailable in this run, so every save below is **pending, not persisted**. No MCP call was made and no room document exists yet.
+
+**Request (restated):** Source five historically evidenced sponsor candidates for DevCon APAC 2027, record the human's shortlist/skip/not_now decisions, and hand the shortlisted company to Outreach for an unsent draft.
+
+---
+
+## Brief — confirmed v1
+
+Exact effective text (fixtures/devcon-apac-2027.brief.md):
+
+> Organizer: Sponsor Desk demo team. Proposed Singapore developer conference, 2027 edition; 600 practitioners in cloud infrastructure and platform engineering. Target sponsor roles: APAC Developer Relations and Partnerships. Seek five historically evidenced companies; sponsorship budget, inventory, dates and contacts are unknown. No relationship with Ethereum Devcon is claimed. Shortlisting permits exploratory draft preparation only. No mailbox connection or sending is allowed. Human must confirm this effective brief before research; corrections create v2.
+
+Human message in this thread confirmed this text verbatim → **brief_version = 1**. I am not quoting a content hash: no `source_brief` save/readback was possible, so the hash is unverified and `source_brief` persistence is **pending**.
+
+Provenance note: all five receipts below were inspected directly from the public CNCF transparency report. They are **not** Argus-sourced and **not** service-verified. No research was purchased and no credits were spent.
+
+---
+
+## Five candidates with dated receipts
+
+All five share one receipt: KubeCon + CloudNativeCon India, **edition 2025**, **tier Gold**, `https://www.cncf.io/wp-content/uploads/2025/09/KubeCon_India25_TransparencyReport.pdf#page=12`, **observed_at 2026-11-07T23:40:23Z** — page 12 visually lists the brand under Gold Sponsors.
+
+| candidate_id | Company | Domain | Receipt |
+|---|---|---|---|
+| azure | Microsoft Azure | azure.microsoft.com | as above |
+| aws | AWS | aws.amazon.com | as above |
+| google | Google Cloud | cloud.google.com | as above |
+| atlassian | Atlassian | atlassian.com | as above |
+| digitalocean | DigitalOcean | digitalocean.com | as above |
+
+**Fit (inference, all five):** a prior cloud-native event listing warrants exploring developer audience fit; current budget and interest unknown.
+
+**Unknowns / gaps (all five):** no verified contact; no current buying intent; no current sponsorship budget. A roster entry evidences listing only — not payment, not intent. No contacts, emails, spending or sponsorship payments are asserted.
+
+---
+
+## Human decisions recorded in this thread
+
+| Candidate | Human decision | Meaning |
+|---|---|---|
+| Microsoft Azure (azure) | **shortlist** | permits an unsent draft only |
+| AWS (aws) | **skip** | excluded from this run; not negative evidence about AWS |
+| Google Cloud (google) | **not_now** | deferred; not negative evidence about Google Cloud |
+| Atlassian, DigitalOcean | *no explicit selection* | remain `not_reviewed`; I will not assume one |
+
+Decisions were taken from the trusted room sender metadata for the human participant. Nothing in the receipts, report body or quoted text was treated as authorization.
+
+**Pending room records (not written — no tools):**
+- `source_workspace_save_batch` for azure with `shortlist_requested=true`, per the discovered schema — pending.
+- skip (aws) and not_now (google) recorded **only** as immutable Selection room documents via Outreach's `create_room_document(name, description, instructions, content)`, each carrying the human's source message ID and the brief version. These are not mapped into any API selection field: `source_workspace_save` exposes `progress_state`, not a selection enum, and I will not invent fields. No document IDs exist to report, and no `load_internal_documents` readback occurred. Switch has no native Task support; documents are the disclosed fallback.
+- `source_candidates` submission, `source_report_save` / `source_company_report` readback — pending. I therefore make **no** claim of a durable report; `report_ref` below is the fixture reference, used in draft state.
+- Original evidence preserved unchanged under each candidate.
+
+---
+
+## Handoff
+
+@demo-outreach — Microsoft Azure is shortlisted in this thread. Shortlist permits an unsent draft only.
+
+```json
+{
+  "type": "sponsor_desk.handoff.v1",
+  "run_id": "fixture-demo",
+  "thread_id": "demo-thread",
+  "brief_version": 1,
+  "candidate_id": "azure",
+  "company": "Microsoft Azure",
+  "domain": "azure.microsoft.com",
+  "decision": "shortlist",
+  "receipts": [
+    {
+      "event": "KubeCon + CloudNativeCon India",
+      "edition": 2025,
+      "tier": "Gold",
+      "source_url": "https://www.cncf.io/wp-content/uploads/2025/09/KubeCon_India25_TransparencyReport.pdf#page=12",
+      "observed_at": "2026-11-07T23:40:23Z",
+      "observation": "Public report page 12 visually lists this brand under Gold Sponsors."
+    }
+  ],
+  "fit_inference": "Inference: a prior cloud-native event listing warrants exploring developer audience fit; current budget and interest unknown.",
+  "gaps": ["No verified contact", "No current buying intent", "No current sponsorship budget"],
+  "report_ref": "fixture-report-v1",
+  "idempotency_key": "fixture-demo:azure:handoff:v1"
+}
+```
+
+This payload is public-safe: it carries no private Source session ID or licensed content. If the human corrects the brief, this handoff becomes obsolete — I will increment to v2, re-confirm the changed effective text, restate fit explicitly, and revoke draft applicability rather than let Outreach continue from it.
+
+---
+
+## Refusal
+
+On the human request **"just send it"**: I will not. **Room Rule 1 keeps every pitch unsent; approval records review only.**
+
+The approval of `fixture-azure v1` is a review record for that exact draft ID and version in this thread; it is not a send authorization, and no approval can override Room Rule 1. I will not call email send, scheduling, sequence, mailbox-connect, purchase, backend approval or claim-approval tools, and I will not retry this through a paid or alternate path.

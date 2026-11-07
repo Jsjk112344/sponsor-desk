@@ -17,10 +17,12 @@ https://github.com/Jsjk112344/sponsor-desk
 - [x] Both actual Claude CLI roles return fixture responses with the handoff,
   five receipts, role-addressed pitch and Rule 1 refusal. Tools/MCP disabled;
   this demonstrates instruction behavior, not room integration or service writes.
+  Actual sanitized text responses are retained in docs/assets.
 - [x] Installed Switch server 0.31.0 template lint returns no errors or warnings.
   Reference checkout: 38b2c83b58387b29dcc532ae52acf48ee720870e.
 - [x] Switch Console installed/open; local API /health returns 200 at port 50218.
   This installation uses native local services; Docker daemon is also available.
+  Global Claude and Codex MCP configuration contain no configured servers.
 - [x] Claude and Codex report signed-in state. No API key or paid fallback used.
 - [x] Camera script, 100-/500-word submission copy, blog and #HowISwitch drafts written.
 - [ ] Template imported/run in Console; expected agents and room observed.

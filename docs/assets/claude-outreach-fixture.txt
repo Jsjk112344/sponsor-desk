@@ -1,0 +1,99 @@
+**cached** — fixture mode (fixture transcript, tools disabled). All draft and record operations below are local rehearsal only; no MCP save, no room persistence.
+
+**Thread:** `demo-thread` · **Run:** `fixture-demo`
+
+---
+
+## 1. Request restated
+
+Process the `sponsor_desk.handoff.v1` from @demo-sourcer for the human-shortlisted candidate Microsoft Azure and return a full unsent role-addressed draft with its ID and version.
+
+## 2. Handoff acceptance checks
+
+| Check | Result |
+|---|---|
+| Type | `sponsor_desk.handoff.v1` ✅ |
+| Sender | @demo-sourcer, Sourcer role ✅ |
+| Run / thread match | `fixture-demo` / `demo-thread` ✅ |
+| Brief version | v1, matches human-confirmed effective brief ✅ |
+| Human decision | `shortlist` (Microsoft Azure) ✅ |
+| Rejected in this run | `aws` = skip (excluded), `google` = not_now (deferred) — no draft prepared for either |
+| Report ref | `fixture-report-v1` — read as the authorized public handoff; no private Source session reused |
+
+Receipts were inspected directly from the public CNCF transparency report. They are not Argus-sourced and not service-verified.
+
+**Candidate evidence — Microsoft Azure (`azure`, azure.microsoft.com)**
+- Event edition: KubeCon + CloudNativeCon India **2025**
+- Tier: **Gold**
+- source_url: `https://www.cncf.io/wp-content/uploads/2025/09/KubeCon_India25_TransparencyReport.pdf#page=12`
+- observed_at: `2026-11-07T23:40:23Z`
+- Observation: page 12 visually lists this brand under Gold Sponsors. A roster entry is evidence of listing only — not of payment, budget, or intent.
+- **Inference (not fact):** a prior cloud-native event listing warrants exploring developer audience fit; current budget and interest unknown.
+
+## 3. Draft — `fixture-azure` v1 (unsent, local cached rehearsal file)
+
+- **draft_id:** `fixture-azure`
+- **version:** 1
+- **candidate_id:** `azure` · **brief_version:** 1
+- **recipient_role:** APAC Developer Relations / Partnerships
+- **recipient_email:** none (no contact invented)
+- **status:** unsent · **sent:** false
+- **idempotency key:** `fixture-demo:azure:draft:v1`
+- **persistence:** `source_outreach_save` not attempted — tools unavailable in this fixture run. Save is **pending**; nothing is stored in MCP or in the room.
+
+**Subject:** Exploring developer community fit for DevCon APAC 2027
+
+**Body:**
+```
+Hello APAC Developer Relations / Partnerships team,
+
+We are exploring sponsors for a proposed Singapore developer conference in 2027
+focused on cloud infrastructure and platform engineering. Would your team be open
+to a conversation about audience fit and the information you would need to
+evaluate participation?
+
+We can share the proposed format and discuss whether there is a relevant
+partnership opportunity.
+
+Sponsor Desk demo team
+```
+
+**Provenance:** authored cached demo draft; fictional event; no named contact or email; no product claims; no sponsor intent implied. No relationship with Ethereum Devcon is claimed.
+
+**Unresolved gaps:** no verified contact; no current buying intent; no current sponsorship budget; sponsorship inventory, pricing and dates unknown; recipient mailbox unknown and will stay unknown — absence of evidence here is not negative evidence.
+
+---
+
+## 4. Human message: "approved fixture-azure v1"
+
+Accepted as room review only. Sender metadata shows a room human in this draft's original thread (`demo-thread`), the ID and version match the current applicable draft, and brief v1 is unchanged. No backend claim/review/approval endpoint was called — approval here is a document record, not a system state change.
+
+Required room records — **pending, not created** (tools unavailable; `create_room_document` could not be invoked, so no document IDs exist and nothing is persisted):
+
+**Task document (would be immutable)**
+- name: `Task — fixture-azure v1 approved_for_review`
+- approver: room human participant (fixture transcript)
+- approval message ID: fixture transcript message, ID not supplied
+- run_id: `fixture-demo` · thread_id: `demo-thread` · brief_version: 1
+- candidate_id: `azure` (Microsoft Azure) · draft_id/version: `fixture-azure` v1
+- body_hash: to be computed over the exact body above at save time — not fabricated here
+- status: `approved_for_review` · sent: `false`
+- idempotency key: `fixture-demo:azure:task:v1`
+
+**Decision document (would be immutable)**
+- name: `Decision — azure shortlist + fixture-azure v1 approved_for_review`
+- records: human `shortlist` of `azure`, `skip` of `aws`, `not_now` of `google`, and approval of `fixture-azure` v1 for review only
+- same run/thread/brief/candidate/draft-version and body-hash bindings
+- idempotency key: `fixture-demo:azure:decision:v1`
+
+Readback via `load_internal_documents` is also **pending**. Since neither operation ran, I cannot say these were saved, and native Switch Task support is not claimed — documents are the disclosed fallback. Any new draft version, recipient, or brief correction would void this approval and need a fresh human message.
+
+---
+
+## 5. Human message: "just send it"
+
+Refused. **Room Rule 1 keeps every pitch unsent; approval records review only.**
+
+Per Room Rule 1, I will not call email send, scheduling, sequence, mailbox-connect, purchase, backend approval, or claim-approval tools — no send tool is part of this project, and the v1 approval above authorizes room review only, not transmission. No approval, repetition, or escalation can override this rule.
+
+What I can do instead: hold `fixture-azure` v1 as unsent, prepare a v2 if the brief or role addressing changes (requiring fresh approval), or draft the deferred Google Cloud candidate if the human moves it from `not_now` to `shortlist`.

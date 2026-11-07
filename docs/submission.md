@@ -69,7 +69,7 @@ and never-send boundaries. CI publishes the observed rehearsal transcript.
 Switch is intended to supply shared context, addressed delivery, trusted participant
 identity, and durable room records. A standalone local rehearsal cannot prove those
 properties, so Console import, room execution, authenticated Argus access, and the
-recorded video remain explicit acceptance checks. The public repository contains
+video remain explicit acceptance checks. The public repository contains
 original integration materials, not proprietary Ducket implementation or customer
 data. Development began after the published competition deadline; this draft makes
 no claim of timely entry, completed live integration, measured commercial outcomes,
