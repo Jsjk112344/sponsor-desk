@@ -26,7 +26,9 @@ https://github.com/Jsjk112344/sponsor-desk
 - [x] Claude and Codex report signed-in state. No API key or paid fallback used.
 - [x] Camera script, 100-/500-word submission copy, blog and #HowISwitch drafts written.
 - [ ] Template imported/run in Console; expected agents and room observed.
-- [ ] Discord or Slack bridge connected and exact bridge name verified.
+- [x] Discord bridge verified through authenticated Switch API: exact display name
+  `Discord`, type `discord`, status `active`, channel creation enabled.
+  The current Switch account has a linked Discord identity. Use `bridge=Discord`.
 - [ ] Actual fixture room sequence, Selection/Task/Decision documents and readbacks observed.
 - [ ] Authenticated live Source/Argus/Sales calls from the actual Switch host verified.
 - [ ] Live flow and real room screenshots captured under docs/assets.
@@ -35,7 +37,7 @@ https://github.com/Jsjk112344/sponsor-desk
 
 ## Remaining owner dependencies
 
-Connect Discord/Slack and link the owner identity; provide the exact bridge name.
+Discord connection and owner identity are verified.
 Complete provider-side Source/corpus/Sales authorization with the required grants;
 web connector consent alone does not establish CLI access. Apollo stays excluded.
 Record and host the actual demo, and handle any organizer communication/submission
